@@ -5,46 +5,79 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aditya Shandilya</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
       background-color: #eafaf1;
       font-family: "Courier New", Courier, monospace;
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
+
     .social-links a {
       color: #00f;
       text-decoration: none;
       margin: 0 10px;
       font-weight: normal;
     }
+
     .intro {
       font-size: 24px;
       font-weight: normal;
       margin-top: 20px;
     }
+
     .quote {
       font-style: italic;
       margin-top: 20px;
       color: #333;
     }
+
+    main {
+      flex-grow: 1; /* Pushes the footer to the bottom */
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 10px;
+      background-color: #eafaf1;
+    }
+
+    .copyright {
+      font-size: 14px;
+      color: #666;
+    }
   </style>
 </head>
 <body>
-
+<br>
   <div class="social-links">
     [<a href="https://github.com/Aditya-Shandilya1182">github</a>]
     [<a href="https://www.linkedin.com/in/aditya-shandilya-b2b294258/">linkedin</a>]
     [<a href="https://x.com/apolloX86">twitter</a>]
   </div>
-	<br>
+  <br>
+
   <header>
     <p class="quote">"I dream. Sometimes I think that's the only right thing to do." <br>— Haruki Murakami</p>
-<br> <br>
+    <br><br>
     <p class="intro">hi, i am Aditya Shandilya</p>
+<br>
   </header>
 
   <main>
     <p>i am working on making my computer think.</p>
   </main>
+
+  <footer>
+    <p class="copyright">© 2025 Aditya Shandilya</p>
+  </footer>
 
 </body>
 </html>
