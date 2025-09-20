@@ -3,81 +3,212 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aditya Shandilya</title>
+  <title>Aditya Shandilya | Profile</title>
+  
+  <!-- Google Font: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
   <style>
-    * {
+    body {
       margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+      padding: 40px 0;
+      background-color: white;
+      font-family: 'Inter', sans-serif;
+      display: flex;
+      justify-content: center;
+    }
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: left;
+  margin-bottom: 40px;
+  margin-top: 0px;
+}
+
+.profile-pic-wrapper {
+  margin-right: 28px;
+}
+
+.profile-header img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0;
+}
+
+.profile-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+    .profile-container {
+      max-width: 800px;
+      text-align: left; /* align text like a resume */
+      line-height: 1.6;
     }
 
-    body {
-      background-color: #eafaf1;
-      font-family: "Courier New", Courier, monospace;
+    .profile-header {
       text-align: center;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
+      margin-bottom: 40px;
+      margin-top : 0px;
     }
+
+    .profile-header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    h2 {
+      margin-top: 30px;
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    a {
+      color: #333;
+      text-decoration: none;
+    }
+    a:hover {
+  color: #4faf8d;   /* hover effect */
+}
 
     .social-links a {
-      color: #00f;
-      text-decoration: none;
-      margin: 0 10px;
-      font-weight: normal;
-    }
+  margin: 0 12px;   /* space between links */
+  text-decoration: none;
+  color: #333;
+}
 
-    .intro {
-      font-size: 24px;
-      font-weight: normal;
-      margin-top: 20px;
-    }
+.social-links a:hover {
+  color: #4faf8d;   /* hover effect */
+}
+.experience-list {
+  list-style: none; /* remove default dots */
+  padding: 0;
+}
 
-    .quote {
-      font-style: italic;
-      margin-top: 20px;
-      color: #333;
-    }
+.experience-list li {
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 25px; /* space for arrow */
+}
 
-    main {
-      flex-grow: 1; /* Pushes the footer to the bottom */
-    }
+.experience-list li::before { /* arrow instead of dot */
+  position: absolute;
+  left: 0;
+  color: #0073e6; /* nice blue arrow */
+  font-weight: bold;
+}
 
-    footer {
-      margin-top: auto;
-      padding: 10px;
-      background-color: #eafaf1;
-    }
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
 
-    .copyright {
-      font-size: 14px;
-      color: #666;
-    }
+.experience-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.experience-header .date {
+  font-style: italic;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+
+
   </style>
 </head>
 <body>
-<br>
-  <div class="social-links">
-    [<a href="https://github.com/Aditya-Shandilya1182">github</a>]
-    [<a href="https://www.linkedin.com/in/aditya-shandilya-b2b294258/">linkedin</a>]
-    [<a href="https://x.com/apolloX86">twitter</a>]
+  <div class="profile-container">
+    <!-- Header -->
+    <div class="profile-header">
+  <div class="profile-pic-wrapper">
+    <img src="profile.png" alt="Profile Picture" />
   </div>
-  <br>
+  <div class="profile-title-wrapper">
+    <h1>Aditya Shandilya</h1>
+    <p style="color:#50C878; margin-top:0;">@spicekernel</p>
+    <p class="social-links">
+      <a href="mailto:adityashandilyap22@gmail.com">email</a>
+      <a href="https://www.linkedin.com/in/aditya-shandilya-b2b294258/">linkedin</a>
+      <a href="https://github.com/Aditya-Shandilya1182">github</a>
+      <a href="https://x.com/spicekernel">twitter</a>
+      <a href="blog.html">blog</a>
+    </p>
+  </div>
+</div>
+<hr style="border: none; border-top: 1px solid #ccc; width: 100%; max-width: 800px; margin: 30px 0;">
 
-  <header>
-    <p class="quote">"I dream. Sometimes I think that's the only right thing to do." <br>— Haruki Murakami</p>
-    <br><br>
-    <p class="intro">hi, i am Aditya Shandilya</p>
-<br>
-  </header>
 
-  <main>
-    <p>i am working on making my computer think.</p>
-  </main>
 
-  <footer>
-    <p class="copyright">© 2025 Aditya Shandilya</p>
-  </footer>
+	<h2> about me </h2>
+    <p>Hi there! I spend my time teaching computers how to think (or at least pretend convincingly). I’m interested in the challenges of training large scale deep neural networks that push the limits of what machines can learn. :)</p>
+    <!-- Experience -->
+    <h2>career history</h2>
+<ul class="experience-list">
+  <li>
+    <div class="experience-header">
+      <h3>&#8594; Soket AI Labs</h3>
+      <span class="date">July 2025– Present</span>
+    </div>
+    <p>
+     Built and optimized pre-training infrastructure for Mixture of Expert based multiligual LLM.
+    </p>
+  </li>
+  <li>
+    <div class="experience-header">
+      <h3>&#8594; Applied Mathematics Department, DTU</h3>
+      <span class="date">May – July 2024</span>
+    </div>
+    <p>
+      Researched and developed Extreme Multi-Label Classification models.
+    </p>
+  </li>
+</ul>
 
+
+ 
+   <!-- Projects -->
+<h2>projects</h2>
+<ul class="experience-list">
+  <li>
+    <div class="experience-header">
+      <a href="https://github.com/Aditya-Shandilya1182/neo"><h3>&#8594; Neo </h3></a>
+    </div>
+    <p>
+     Developed a GPT-style autoregressive Transformer from scratch in PyTorch
+    </p>
+  </li>
+  <li>
+    <div class="experience-header">
+      <a href="https://github.com/Aditya-Shandilya1182/TinyNet"><h3>&#8594; TinyNet</h3></a>
+    </div>
+    <p>
+      Built a lightweight neural network library with custom tensor operations and auto-differentiation engine from scratch.
+    </p>
+  </li>
+  
+</ul>
+
+  </div>
 </body>
 </html>
